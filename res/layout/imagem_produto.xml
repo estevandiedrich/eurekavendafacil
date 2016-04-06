@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="left|center"
+	android:paddingBottom="5sp"
+	android:paddingTop="5sp"
+	android:paddingLeft="5sp"
+    android:background="@drawable/bg">
+
+	<ImageView
+	    android:id="@+id/imagem_produto"
+	    android:layout_width="fill_parent"
+	    android:layout_weight="0.16"
+        android:layout_height="0dip"
+        android:contentDescription="@string/imagem_produto"/>
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="52dp" >
+
+		<Button	    
+	        android:id="@+id/voltar_produto"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+	        android:text="@string/voltar"/>
+
+		<ImageButton
+		    android:id="@+id/sincroniza_imagem"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+		    android:contentDescription="@string/sincroniza_clientes"
+		    android:src="@drawable/refresh32x32" />
+
+	</RelativeLayout>
+</LinearLayout>

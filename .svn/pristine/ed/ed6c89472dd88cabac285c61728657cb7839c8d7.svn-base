@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    <TextView 
+	        android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"
+	  		android:textColor="#372c24"
+	  		android:text="@string/pedido"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+		<EditText 
+		    	android:id="@+id/pedido_filtro"
+		    	android:layout_width="260dp"
+		    	android:hint="@string/filtro_pedido"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="5dip"
+		  		android:layout_weight="0.71"
+		  		android:singleLine="true"/>
+		<ImageButton
+            android:id="@+id/sincroniza_pedidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:contentDescription="@string/sincroniza_clientes"
+            android:src="@drawable/refresh32x32" />
+	</LinearLayout>
+	<ListView
+	    	android:id="@+id/pedidos_list" 
+	    	android:layout_width="fill_parent"
+	    	android:layout_weight="0.16"
+	    	android:layout_height="0dip">
+			<requestFocus /> 
+	</ListView>
+	<Button	    
+            android:id="@+id/voltar_pedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelar"/>	  
+</LinearLayout>

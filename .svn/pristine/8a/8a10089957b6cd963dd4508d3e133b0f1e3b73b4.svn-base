@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+		<Button
+		    android:id="@+id/opcoes_pedido"
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+		    android:text="@string/mais" />
+		
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/produtos_pedido"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.16"
+        android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+    </ListView>
+
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:orientation="horizontal" >
+
+	        <Button
+	            android:id="@+id/adiciona_produto_pedido"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:contentDescription="@string/adicionar_produto_pedido"
+	            android:text="@string/adicionar_produto_pedido" />
+
+	        <!--
+                 ImageButton
+	            android:id="@+id/remove_produto_pedido"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:contentDescription="@string/remover_produto_pedido"
+	            android:src="@drawable/minus32" /
+	        -->
+	    </LinearLayout>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@+id/linearLayout1"
+	        android:text="@string/total_pedido"
+	        android:textColor="#372c24" />
+		<EditText
+	        android:id="@+id/total_pedido"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="35dp"
+	        android:hint="@string/total_pedido"
+	        android:enabled="false"
+	        android:layout_toLeftOf="@+id/finalizar_pedido"
+	        android:layout_toRightOf="@+id/linearLayout1"
+	        android:ems="10" />
+		<Button
+	        android:id="@+id/finalizar_pedido"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:text="@string/finalizar_pedido" />
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/urgente"
+                android:textColor="#372c24" />
+
+            <RadioGroup
+                android:id="@+id/pedido_urgente"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/pedido_urgente_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/sim"
+                    android:textColor="#372c24" />
+
+                <RadioButton
+                    android:id="@+id/pedido_nao_urgente_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/nao"
+                    android:textColor="#372c24" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_pagamento"
+                android:textColor="#372c24" />
+
+            <RadioGroup
+                android:id="@+id/tipo_pagamento"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/cobranca_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/cobranca"
+                    android:textColor="#372c24" />
+
+                <RadioButton
+                    android:id="@+id/debito_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/debito"
+                    android:textColor="#372c24" />
+
+                <RadioButton
+                    android:id="@+id/cheque_radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/cheque"
+                    android:textColor="#372c24" />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/prazo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/prazos"
+                android:prompt="@string/prazo_prompt" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/finalizar_opcoes_pedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/confirmar" />
+
+    </RelativeLayout>
+
+</LinearLayout>

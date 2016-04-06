@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="left|center"
+	android:paddingBottom="5sp"
+	android:paddingTop="5sp"
+	android:paddingLeft="5sp"
+    android:background="@drawable/bg">
+	<TextView
+	    android:id="@+id/cod_descricao"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+		android:text="texto1"
+		android:textColor="#372c24"
+		android:textSize="20sp">
+	</TextView>
+	<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+		<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"        
+	        android:orientation="horizontal" >
+			<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"        
+		        android:orientation="vertical" >
+				<TextView 
+			        android:layout_width="match_parent"
+			  		android:layout_height="wrap_content"
+			  		android:textColor="#372c24"
+			  		android:text="@string/preco_produto"/>
+				<LinearLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"        
+			        android:orientation="horizontal" >
+			        <TextView 
+				        android:layout_width="match_parent"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#372c24"
+				  		android:text="@string/reais"/>
+					<TextView 
+					    android:id="@+id/preco_produto"
+				        android:layout_width="match_parent"
+				  		android:layout_height="wrap_content"
+				  		android:textColor="#372c24"
+				  		android:text="texto1"/>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="5dp"        
+		        android:orientation="vertical" >
+		        <TextView 
+			        android:layout_width="match_parent"
+			  		android:layout_height="wrap_content"
+			  		android:textColor="#372c24"
+			  		android:text="@string/desc_max"/>
+				<TextView 
+				    android:id="@+id/desc_max"
+			        android:layout_width="match_parent"
+			  		android:layout_height="wrap_content"
+			  		android:textColor="#372c24"
+			  		android:text="texto1"/>
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="5dp"        
+		        android:orientation="vertical" >
+		        <TextView 
+			        android:layout_width="match_parent"
+			  		android:layout_height="wrap_content"
+			  		android:textColor="#372c24"
+			  		android:text="@string/urgente"/>
+				<TextView 
+				    android:id="@+id/urgente"
+			        android:layout_width="match_parent"
+			  		android:layout_height="wrap_content"
+			  		android:textColor="#372c24"
+			  		android:text="texto1"/>
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="5dp"        
+		        android:orientation="vertical" >
+		        <TextView 
+			        android:layout_width="match_parent"
+			  		android:layout_height="wrap_content"
+			  		android:textColor="#372c24"
+			  		android:text="@string/unidade"/>
+				<TextView 
+				    android:id="@+id/unidade"
+			        android:layout_width="match_parent"
+			  		android:layout_height="wrap_content"
+			  		android:textColor="#372c24"
+			  		android:text="texto1"/>
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="5dp"        
+		        android:orientation="vertical" >
+		        <TextView 
+			        android:layout_width="match_parent"
+			  		android:layout_height="wrap_content"
+			  		android:textColor="#372c24"
+			  		android:text="@string/estoque"/>
+				<TextView 
+				    android:id="@+id/estoque"
+			        android:layout_width="match_parent"
+			  		android:layout_height="wrap_content"
+			  		android:textColor="#372c24"
+			  		android:text="texto1"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<ImageButton
+		    android:id="@+id/imagem_produto"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:contentDescription="@string/produto"
+		    android:src="@drawable/image" />
+
+	</RelativeLayout>
+</LinearLayout>

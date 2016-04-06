@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.eurekasoftwares.tablet"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" /> 
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!-- uses-permission android:name="android.permission.DISABLE_KEYGUARD"/ -->
+	
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:name="EurekaVendaFacilLibraryApp">
+        
+        <uses-library android:name="com.google.android.maps" />
+        
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--  Entry for RegisterActivity.class -->
+        <activity android:name=".cliente.ClientesListViewActivity"
+        		  android:label="Lista de clientes"
+        		  android:screenOrientation="portrait">
+            <intent-filter>
+        		<action android:name="android.intent.action.VIEW"/>
+     			<category android:name="android.intent.category.DEFAULT" />
+     		</intent-filter>        
+        </activity>
+        <activity android:name=".produto.ProdutosListViewActivity"
+        		  android:label="Lista de produtos"
+        		  android:screenOrientation="portrait">
+            <intent-filter>
+        		<action android:name="android.intent.action.VIEW"/>
+     			<category android:name="android.intent.category.DEFAULT" />
+     		</intent-filter>        
+        </activity>
+        <!-- activity android:name=".pedido.PedidoActivity"
+        		  android:label="Pedido">
+            <intent-filter>
+        		<action android:name="android.intent.action.VIEW"/>
+     			<category android:name="android.intent.category.DEFAULT" />
+     		</intent-filter>            
+        </activity-->
+        <activity android:name=".config.ConfigActivity"
+            	  android:label="Configuração"
+            	  android:screenOrientation="portrait">
+            <intent-filter>
+        		<action android:name="android.intent.action.VIEW"/>
+     			<category android:name="android.intent.category.DEFAULT" />
+     		</intent-filter>        
+        </activity>
+        <activity android:name=".pedido.OpcoesPedidoViewActivity"
+            	  android:label="Condições de pagamento"
+            	  android:screenOrientation="portrait">
+            <intent-filter>
+        		<action android:name="android.intent.action.VIEW"/>
+     			<category android:name="android.intent.category.DEFAULT" />
+     		</intent-filter>        
+        </activity>
+        <activity android:name=".pedido.PedidosListViewActivity"
+            	  android:label="Pedidos"
+            	  android:screenOrientation="portrait">
+            <intent-filter>
+        		<action android:name="android.intent.action.VIEW"/>
+     			<category android:name="android.intent.category.DEFAULT" />
+     		</intent-filter>        
+        </activity>
+        <activity android:name=".map.MapasSimplesActivity"
+            	  android:label="Mapas"
+            	  android:screenOrientation="portrait">
+            <intent-filter>
+        		<action android:name="android.intent.action.VIEW"/>
+     			<category android:name="android.intent.category.DEFAULT" />
+     		</intent-filter>        
+        </activity>
+        <activity android:name=".img.ImagemActivity"
+            	  android:label="Imagens"
+            	  android:screenOrientation="portrait">
+            <intent-filter>
+        		<action android:name="android.intent.action.VIEW"/>
+     			<category android:name="android.intent.category.DEFAULT" />
+     		</intent-filter>        
+        </activity>
+        <activity android:name=".cliente.ClientePedidosTitulosViewActivity"
+            	  android:label="Principal"
+            	  android:screenOrientation="portrait">
+            <intent-filter>
+        		<action android:name="android.intent.action.VIEW"/>
+     			<category android:name="android.intent.category.DEFAULT" />
+     		</intent-filter>        
+        </activity>
+    </application>
+
+</manifest>

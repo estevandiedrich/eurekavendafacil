@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="left|center"
+	android:paddingBottom="5sp"
+	android:paddingTop="5sp"
+	android:paddingLeft="5sp"
+    android:background="@drawable/bg" >
+    <TextView 
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:text="@string/config_url"/>
+    <EditText
+        android:id="@+id/config_url"
+        android:inputType="textUri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <requestFocus />
+	</EditText>
+
+    <Button
+        android:id="@+id/salvar_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar" />
+
+</LinearLayout>

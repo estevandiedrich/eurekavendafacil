@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="left|center"
+	android:paddingBottom="5sp"
+	android:paddingTop="5sp"
+	android:paddingLeft="5sp"
+    android:background="@drawable/bg">
+    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/numero_titulo"
+                android:textColor="#372c24" />
+            <TextView
+                android:id="@+id/numero_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="texto1"
+                android:textColor="#372c24" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/data_emissao"
+                android:textColor="#372c24" />
+            <TextView
+                android:id="@+id/data_emissao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="texto1"
+                android:textColor="#372c24" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/data_vencimento"
+                android:textColor="#372c24" />
+            <TextView
+                android:id="@+id/data_vencimento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="texto1"
+                android:textColor="#372c24" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valor"
+                android:textColor="#372c24" />
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="texto1"
+                android:textColor="#372c24" />
+        </LinearLayout>
+        <RelativeLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+		    <Button
+		        android:id="@+id/cobrar_titulo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentTop="true"
+		        android:text="@string/cobrar_titulo" />
+	</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

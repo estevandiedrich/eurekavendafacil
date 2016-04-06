@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+        <!-- EditText
+            android:id="@+id/cliente_filtro"
+            android:layout_width="260dp"
+            android:hint="@string/filtro_cliente"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="0.71"
+            android:textColor="#372c24"
+            android:singleLine="true" /-->
+        <ImageButton
+            android:id="@+id/sincroniza_titulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:contentDescription="@string/sincroniza_titulos"
+            android:src="@drawable/refresh32x32" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/titulos"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.16"
+        android:scrollbarAlwaysDrawVerticalTrack="true" >
+    </ListView>
+</LinearLayout>
